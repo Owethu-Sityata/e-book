@@ -1,0 +1,235 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray for a soft background */
+}
+
+/* Header */
+header {
+    background: #302d2d; /* Slightly lighter than before */
+    color: #fff;
+    padding: 1.5em 0; /* More padding for a spacious feel */
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Use inline-block for spacing */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Bold links for emphasis */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    background: #fff; /* White background for content */
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    border-radius: 10px; /* Slight rounding of corners */
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: rgba(240, 240, 240, 0.9); /* Slightly darker background */
+    border-left: 5px solid #007bff; /* Blue decorative left border */
+    border-radius: 8px;
+    position: relative;
+}
+
+section h2 {
+    font-size: 2.5em; /* Larger subheadings */
+    margin-bottom: 15px;
+    color: #333; /* Darker color for headings */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #444;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    text-align: center; /* Center the navigation */
+    margin: 30px 0; /* More margin around the nav */
+}
+
+.nav-buttons a {
+    display: inline-block; /* Make anchor tags behave like buttons */
+    padding: 12px 25px; /* Add padding for button look */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth effects */
+}
+
+.nav-buttons a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+.author-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px 0; /* Space around the container */
+}
+
+.author-info {
+    flex: 1; /* Allow text section to take remaining space */
+}
+
+
+/* Story Buttons */
+.story-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons */
+}
+
+.story-button {
+    background-color: #202123; /* Button background */
+    color: white; /* White text */
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    width: 80%; /* Set a width for buttons */
+    text-align: center; /* Center text */
+}
+
+.story-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+}
+
+/* Contact Form */
+.contact-form,
+.newsletter-form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slight rounding */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+textarea {
+    height: 150px; /* Height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.whatsapp-button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 12px 25px; /* Add padding for comfort */
+    background-color: #25D366; /* WhatsApp green */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make text bold */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.whatsapp-button:hover {
+    background: #128C7E; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.nav-button {
+    display: inline-block; /* Make the anchor tags behave like buttons */
+    padding: 15px 30px; /* Increased padding for a button feel */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Larger font for readability */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition effects */
+    margin: 0 15px; /* Space between buttons */
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+.email-link {
+    color: #007bff; /* Default link color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.email-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 600px)  {
+    header h1  {
+        font-size: 1.5rem;
+
+    }
+    main .story h2 {
+        font-size: 1.2rem;
+
+    }
+.ebook-container {
+    padding: 15px;
+}
+
+
+}
+
+
+
